@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { Museum } from './features/museum/Museum';
+import { Header } from './features/header/Header';
 import './App.css';
+
+/*
+ * This is the top level of your app! There's nothing to 
+ * implement here, but do refrain from putting your app's
+ * display logic in here. All we really want to do at this
+ * level is output our main components or wrap our app with
+ * middleware such as Redux.
+ * 
+ */
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Museum />
     </div>
   );
 }
