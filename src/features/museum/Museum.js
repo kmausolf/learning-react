@@ -1,5 +1,5 @@
 import { DogCard } from './cards/DogCard';
-import dogs from '../../assets/dogs.json';
+import dogs from '../../assets/dogs';
 
 /*
  *  This component is our main view!  Here, we'll show all the beautiful dogs
