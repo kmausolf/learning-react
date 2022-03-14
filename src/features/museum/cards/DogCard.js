@@ -48,6 +48,7 @@ export const DogCard = (props) => {
     /* ------------------------ CHALLENGE END ---------------------------------- */
 
     const handleFavoriteButtonClick = () => {
+        // Set favorite status to the opposite of what it was before
         setIsFavorite(!isFavorite);
     }
 
