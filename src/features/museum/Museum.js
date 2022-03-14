@@ -12,7 +12,7 @@ import dogs from '../../assets/dogs.json';
  *
  */
 
-export const Museum = (props) => {
+export const Museum = () => {
 
     const generateDogCards = () => {
         /* ----------------- CHALLENGE BEGIN ---------------------- */
