@@ -1,5 +1,11 @@
 // We need to import React's useState hook to manage state in our functional component
 import { useState } from "react";
+import './styles.css';
+import { CardButton } from "./CardButton";
+
+// This is how we import SVGs in React. We can pass them props if we import them this way!
+import { ReactComponent as Favorite } from '../../../assets/carbon_favorite.svg';
+import { ReactComponent as Bone } from '../../../assets/bx_bone.svg';
 
 /*
  * Welcome to the DogCard, a reusable component!  In this card, we'll present the info
@@ -14,7 +20,7 @@ import { useState } from "react";
  * Feel free to make it your own and style it how you like!
  */
 
-const DogCard = (props) => {
+export const DogCard = (props) => {
 
     /*
      * This is what is called a 'hook'.  It's a function that gives us two things,
@@ -41,8 +47,24 @@ const DogCard = (props) => {
 
     /* ------------------------ CHALLENGE END ---------------------------------- */
 
+    const handleFavoriteButtonClick = () => {
+        setIsFavorite(!isFavorite);
+    }
+
+    /* ------------------------ CHALLENGE BEGIN -------------------------------- */
+    
+    /* 
+     * Create a function that, when called, increases the number of bones consumed
+     * by the doggy. You must first have implemented the state value in the challenge
+     * above. Hint: use the current value of the number of bones consumed and set it
+     * to that much + 1!
+     * 
+     */
+
+    /* ------------------------ CHALLENGE END ---------------------------------- */
+
     return (
-        <div>
+        <div className="row">
             <div>
                 {// this block is safe to remove
                     /* 
@@ -72,27 +94,68 @@ const DogCard = (props) => {
                     /* ------------------ CHALLENGE END ------------------------- */
                 }
             </div>
-            <div>
+            <div className="column">
                 <div>
-                    bone button
+                    {// this block is safe to remove
+                        /* ----------------- CHALLENGE BEGIN ------------------------ */
+
+                        /* 
+                         * Implement the button to give the good doggy a bone! In order
+                         * to implement this, you must have first set up your state value
+                         * for keeping track of how many bones this dog has consumed. The
+                         * button should increase the number of bones the dog has consumed
+                         * by one with each press. Use the CardButton just like I've demonstrated
+                         * down below for the Favorite button! You'll need to write a
+                         * function to handle the button click and pass that as the buttonAction
+                         * prop to CardButton.
+                         * 
+                         * Since we don't have an "active" state for this button, you can leave
+                         * that prop off or pass false. For the colors, use the "inactive"
+                         * style props.
+                         * 
+                         */
+
+                        /* ------------------ CHALLENGE END ------------------------- */
+                    }
                 </div>
-                <div>
+                <div className="row">
                     <p>Eaten</p>
                     {// this block is safe to remove
+                        /* ----------------- CHALLENGE BEGIN ------------------------ */
+
                         /* 
-                        * Replace the 0 with the state value you created earlier. Hint:
+                        * Replace the 0 below with the state value you created earlier. Hint:
                         * put the value between a pair of curly braces like this comment here!
                         * 
                         */
+
+                        /* ------------------ CHALLENGE END ------------------------- */
                     }
                     <p>0</p>
                     <p>bones!</p>
                 </div>
                 <div>
-                    favorite button
+                    {// this block is safe to remove
+                        /*
+                         * We want the bone icon to be blue and the background to be white if
+                         * the dog has not been favorited. If they have been favorited, we want
+                         * to invert these colors such that the bone icon becomes white and the
+                         * background to become blue. We base whether or not the button is active
+                         * on our state value that keeps track of if they're a favorite or not.
+                         * 
+                         */
+                    }
+                    <CardButton
+                        ButtonSvg={Favorite}
+                        buttonAction={handleFavoriteButtonClick}
+                        buttonFillColorActive={'white'}
+                        buttonFillColorInactive={'blue'}
+                        buttonBgActive={'blue'}
+                        buttonBgInactive={'white'}
+                        isActive={isFavorite}
+                    />
                 </div>
             </div>
         </div>
     )
-
 }
