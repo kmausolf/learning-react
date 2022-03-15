@@ -7,8 +7,11 @@ import dogs from '../../assets/dogs';
  *  components from a list of dog pictures.
  * 
  *  This file's learning goals:
- *  - Passing props
  *  - Working with a JSON object
+ *  - Dynamically generating components
+ *  - Assigning dynamically generated components a unique key
+ *  - JS map
+ *  - CSS styling
  *
  */
 

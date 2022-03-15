@@ -18,6 +18,15 @@ import { ReactComponent as Bone } from '../../../assets/bx_bone.svg';
  * 
  * Included with this project is a basic design of what the card should look like. 
  * Feel free to make it your own and style it how you like!
+ * 
+ * This file's learning goals:
+ * - State management
+ * - Hooks
+ * - Click handlers
+ * - Fallback values
+ * - Passing props
+ * - CSS styling
+ * 
  */
 
 export const DogCard = (props) => {
@@ -74,7 +83,7 @@ export const DogCard = (props) => {
                      * "if dog doesn't exist or isn't an object, don't try to read its
                      * properties, and instead just default to null". The OR (the ||)
                      * is there just in case we didn't get a dog prop, and will default
-                     * to "No Name Found" rather than showing nothing.
+                     * to "No Name Found" rather than showing nothing. It's a fallback!
                      * 
                      */
                 }

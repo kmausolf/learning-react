@@ -5,6 +5,13 @@ import './styles.css';
  * buttons. The fill colors and button backgrounds default to black and white,
  * respectfully.
  * 
+ * This file is feature-complete, but you'll need to apply CSS to the elements
+ * here in order to make them match the design.
+ * 
+ * This file's learning goals:
+ * - Ternary operators
+ * - CSS styling
+ * 
  * Props:
  * ButtonSvg - the SVG component you want the button to show
  * buttonAction - a function to be called when the button is clicked

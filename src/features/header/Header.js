@@ -6,6 +6,9 @@
  * You're free to design this one to be as simple or as complex as
  * you want.
  * 
+ * This file's learning goals:
+ * - Creating your own React component
+ * 
  */
 
 export const Header = (props) => {
