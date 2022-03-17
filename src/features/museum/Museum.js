@@ -18,7 +18,7 @@ import dogs from '../../assets/dogs';
 export const Museum = () => {
 
     const generateDogCards = () => {
-        /* ----------------- CHALLENGE BEGIN ---------------------- */
+        /* ----------------- CHALLENGE #1 BEGIN ---------------------- */
         
         /* 
          * Here is where we generate all the cards containing the stars
@@ -52,7 +52,7 @@ export const Museum = () => {
          * 
          */
 
-        /* ----------------- CHALLENGE END ------------------------ */
+        /* ----------------- CHALLENGE #1 END ------------------------ */
     }
 
     return(

@@ -27,6 +27,9 @@ import { ReactComponent as Bone } from '../../../assets/bx_bone.svg';
  * - Passing props
  * - CSS styling
  * 
+ * Props:
+ * dog - This prop contains one dog object with the properties id, name, and image
+ * 
  */
 
 export const DogCard = (props) => {
@@ -45,7 +48,7 @@ export const DogCard = (props) => {
      */
     const [isFavorite, setIsFavorite] = useState(false);
 
-    /* ------------------------ CHALLENGE BEGIN -------------------------------- */
+    /* ------------------------ CHALLENGE #3 BEGIN -------------------------------- */
     
     /*
      * Create a state value and setter pair of your own here.  We want to give these
@@ -54,14 +57,14 @@ export const DogCard = (props) => {
      * this value on the card later on.
      */
 
-    /* ------------------------ CHALLENGE END ---------------------------------- */
+    /* ------------------------ CHALLENGE #3 END ---------------------------------- */
 
     const handleFavoriteButtonClick = () => {
         // Set favorite status to the opposite of what it was before
         setIsFavorite(!isFavorite);
     }
 
-    /* ------------------------ CHALLENGE BEGIN -------------------------------- */
+    /* ------------------------ CHALLENGE #5 BEGIN -------------------------------- */
     
     /* 
      * Create a function that, when called, increases the number of bones consumed
@@ -71,7 +74,7 @@ export const DogCard = (props) => {
      * 
      */
 
-    /* ------------------------ CHALLENGE END ---------------------------------- */
+    /* ------------------------ CHALLENGE #5 END ---------------------------------- */
 
     return (
         <div className="row">
@@ -91,7 +94,7 @@ export const DogCard = (props) => {
             </div>
             <div>
                 {// this block is safe to remove
-                    /* ----------------- CHALLENGE BEGIN ------------------------ */
+                    /* ----------------- CHALLENGE #2 BEGIN ------------------------ */
 
                     /* 
                      * Add the image of the dog here, using an <img> tag. Just like
@@ -101,7 +104,7 @@ export const DogCard = (props) => {
                      *
                      */
 
-                    /* ------------------ CHALLENGE END ------------------------- */
+                    /* ------------------ CHALLENGE #2 END ------------------------- */
                 }
             </div>
             <div className="column">
@@ -131,7 +134,7 @@ export const DogCard = (props) => {
                 <div className="row">
                     <p>Eaten</p>
                     {// this block is safe to remove
-                        /* ----------------- CHALLENGE BEGIN ------------------------ */
+                        /* ----------------- CHALLENGE #4 BEGIN ------------------------ */
 
                         /* 
                         * Replace the 0 below with the state value you created earlier. Hint:
@@ -139,7 +142,7 @@ export const DogCard = (props) => {
                         * 
                         */
 
-                        /* ------------------ CHALLENGE END ------------------------- */
+                        /* ------------------ CHALLENGE #4 END ------------------------- */
                     }
                     <p>0</p>
                     <p>bones!</p>

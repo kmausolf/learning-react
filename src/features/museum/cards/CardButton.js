@@ -41,6 +41,12 @@ export const CardButton = ({
          * on the left side of the ? is true, choose the thing right after the ?.  Otherwise,
          * choose the thing right after the :. Here, we use it to swap between styles of the
          * button based on whether or not it's active, if it has an active state.
+         * 
+         * Also, do note that React StyleSheets use camelCase naming conventions rather than
+         * traditional CSS snake-case!  This is to avoid name collisions with regular CSS.
+         * In this button's style prop, you'll notice that in CSS, the property is called
+         * background-color and in React StyleSheets, it's backgroundColor.
+         * 
          */
         <button 
             onClick={buttonAction} 
