@@ -1,4 +1,4 @@
-/* ------------------- CHALLENGE BEGIN -------------------- */
+/* ------------------- CHALLENGE #7 BEGIN -------------------- */
 
 /*
  * Create a cool header for your dog museum! Use other sites on
@@ -20,4 +20,4 @@ export const Header = (props) => {
     )
 }
 
-/* ------------------- CHALLENGE END ---------------------- */
+/* ------------------- CHALLENGE #7 END ---------------------- */

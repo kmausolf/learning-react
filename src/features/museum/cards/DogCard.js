@@ -110,7 +110,7 @@ export const DogCard = (props) => {
             <div className="column">
                 <div>
                     {// this block is safe to remove
-                        /* ----------------- CHALLENGE BEGIN ------------------------ */
+                        /* ----------------- CHALLENGE #6 BEGIN ------------------------ */
 
                         /* 
                          * Implement the button to give the good doggy a bone! In order
@@ -128,7 +128,7 @@ export const DogCard = (props) => {
                          * 
                          */
 
-                        /* ------------------ CHALLENGE END ------------------------- */
+                        /* ------------------ CHALLENGE #6 END ------------------------- */
                     }
                 </div>
                 <div className="row">

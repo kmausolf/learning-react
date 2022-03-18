@@ -23,7 +23,7 @@ This tool is likely for you!  React is fun, but there's a bit of a learning curv
 - `npm` version 16.0.0 and up
 - Powershell 7 and up if you're on Windows
 
-It is recommended that you use [NVM](https://github.com/nvm-sh/nvm) to install `Node.js` and `npm`. Much easier to switch versions, install, the works.
+It is recommended that you use [Node Version Manager](https://github.com/nvm-sh/nvm) to install `Node.js` and `npm`. Much easier to switch versions, install, the works.
 
 ## Recommended Tools
 
@@ -73,6 +73,8 @@ Our first challenge is going to be getting something to show up on the screen, e
 
 `map` is a JavaScript function that can be invoked on iterable data structures, such as arrays.  You'll be working with an array called `dogs`.  I've imported it for you.  We can invoke `map` on `dogs`, because `dogs` is one such iterable data structure.  `map` takes one argument, the function that should be invoked on each item in the array. The function you provide to `map` should also take one argument.  Naming this argument `dog` would be a descriptive name, because each time the function is called, `map` gives the function one item from the array -- that is to say, one `dog`.  The function should return one React component each time it is executed by `map`.  `map` returns to you an array containing the result of each time the function you provided was called.  If you had your function return a React component each time, `map`'s result will be an array of React components (in your case, DogCard components specifically).  Return this array of components from the `generateDogCards()` function, and you should see the results on the screen.
 
+This is the first time we've passed props to a component in React.  What are props?  In short, they're values you can pass down to your components.  If you pass DogCard a `dog` prop in `Museum.js`, that object will be accessible from the DogCard component.  For an example of passing props, take a look toward the bottom of DogCard, where I pass the CardButton component various props.
+
 VERY IMPORTANT: Be sure to assign every HTML element/component you generate from a map function a uniqe `key` prop.  React needs this to be able to detect which components need to update.  Assign `dog.id` to the `key` prop.
 
 ## Challenge #2
@@ -94,6 +96,18 @@ For this challenge, all you need to do is show the number of bones consumed by t
 ## Challenge 5
 
 In this challenge, we'll be using the state value and setter function we got from the hook we set up in Challenge 3.  Create a function that, when called, increases the number of bones the dog has consumed by 1.  You will need to use both the current state value and the setter function to complete this challenge.
+
+## Challenge 6
+
+Just like in `Museum.js`, it's time to pass props again, but this time to CardButton.  For a description of CardButton's props, take a look at the comments at the top of `CardButton.js`.  Since CardButton is a reusable component, we might not use every prop that is available on the component.  As mentioned in the comment for this challenge, there's no need to pass the `isActive` prop for this button, I've set it to default to false.  The colors also have default values.  That said, the only prop you really need to pass is the function you created to increase bones consumed to the `buttonAction` prop and `Bone` to `ButtonSvg`.  Feel free to customize the colors by passing string values such as `green` or `#FFFFFF` to the appropriate color props.
+
+You will need to style the buttons yourself to have them be similar to the design.
+
+## Challenge 7
+
+Ah, the home stretch!  This is more or less your victory lap.  For this challenge, create your own header for the app.  I've provided the file `Header.js` that you can modify to have the header be whatever you want.  Use good judgement when choosing a height for the banner, as we don't want it to be too big or too small.  Look to popular sites on the web for examples!
+
+Once you've completed your header and styled the app to your liking, you're done!  Congratulations on taking your first steps in React!
 
 # React App Documentation
 
