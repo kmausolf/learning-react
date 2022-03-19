@@ -75,7 +75,7 @@ Our first challenge is going to be getting something to show up on the screen, e
 
 This is the first time we've passed props to a component in React.  What are props?  In short, they're values you can pass down to your components.  If you pass DogCard a `dog` prop in `Museum.js`, that object will be accessible from the DogCard component.  For an example of passing props, take a look toward the bottom of DogCard, where I pass the CardButton component various props.
 
-VERY IMPORTANT: Be sure to assign every HTML element/component you generate from a map function a uniqe `key` prop.  React needs this to be able to detect which components need to update.  Assign `dog.id` to the `key` prop.
+VERY IMPORTANT: When we create components via a function like `map`, we say that they are dynamically generated.  As such, they require a key.  Be sure to assign every HTML element/component you generate from a map function a uniqe `key` prop.  React needs this to be able to detect which components need to update.  Assign `dog.id` to the `key` prop.
 
 ## Challenge #2
 
