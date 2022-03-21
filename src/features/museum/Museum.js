@@ -48,9 +48,8 @@ export const Museum = () => {
          * Once you're done mapping out all the components, return the list
          * of mapped components from this function.
          * 
-         * Remember, DogCard takes in three props: key, name, and image. You can get
-         * these from each object in the dogs array. You'll want to assign the
-         * id property to key.
+         * Remember, DogCard takes in one prop: dog. You'll want to assign the
+         * dog.id property to key.
          * 
          * Here's an example of a DogCard component:
          * 
