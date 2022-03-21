@@ -37,9 +37,9 @@ export const CardButton = ({
     return (
         /* this block is safe to remove
          *
-         * What's this ? and : syntax? This is called a "ternary" operator. If the thing
-         * on the left side of the ? is true, choose the thing right after the ?.  Otherwise,
-         * choose the thing right after the :. Here, we use it to swap between styles of the
+         * What's this "?" and ":" syntax? This is called a "ternary" operator. If the thing
+         * on the left side of the "?" is true, choose the thing right after the "?".  Otherwise,
+         * choose the thing right after the ":". Here, we use it to swap between styles of the
          * button based on whether or not it's active, if it has an active state.
          * 
          * Also, do note that React StyleSheets use camelCase naming conventions rather than

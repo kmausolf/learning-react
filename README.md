@@ -77,6 +77,8 @@ This is the first time we've passed props to a component in React.  What are pro
 
 VERY IMPORTANT: When we create components via a function like `map`, we say that they are dynamically generated.  As such, they require a key.  Be sure to assign every HTML element/component you generate from a map function a uniqe `key` prop.  React needs this to be able to detect which components need to update.  Assign `dog.id` to the `key` prop.
 
+// TODO: Add Recommended Readings
+
 ## Challenge #2
 
 First off, great job on completing Challenge 1.  We do a lot of dynamic rendering in libraries and frameworks such as React, and knowing how to dynamically render components is crucial.
