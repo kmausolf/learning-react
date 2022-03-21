@@ -52,6 +52,13 @@ export const Museum = () => {
          * these from each object in the dogs array. You'll want to assign the
          * id property to key.
          * 
+         * Here's an example of a DogCard component:
+         * 
+         * <DogCard
+         *   key={dog.id}
+         *   dog={dog}
+         * />
+         * 
          */
 
         /* ----------------- CHALLENGE #1 END ------------------------ */
