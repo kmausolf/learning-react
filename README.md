@@ -9,6 +9,7 @@ If you have:
 - An interest in learning React
 - Some experience with JavaScript
 - Experience with HTML/CSS
+- Some experience with Git is a plus
 
 If you want:
 
@@ -16,7 +17,7 @@ If you want:
 - Clearly marked challenges
 - To have a tangible app to take home
 
-This tool is likely for you!  React is fun, but there's a bit of a learning curve, as with all libraries and frameworks.  I've done the best I can to assume very little knowledge of React and JS concepts, so this is a good project for a newcomer.  Feel free to Google around if you don't understand something or want to learn more about how React works.  I wanted to keep the comments limited to instructions for the project, so reading up on the React documentation is always a good idea!  You might even learn something that I don't know about yet.
+This tool is likely for you!  React is fun, but there's a bit of a learning curve, as with all libraries and frameworks.  I've done the best I can to assume very little knowledge of React and JS concepts, so this is a good project for a newcomer.  Feel free to Google around if you don't understand something or want to learn more about how React works.  I wanted to keep the comments limited to instructions for the project, so reading up on the React documentation is always a good idea!  You might even learn something that I don't know about yet.  However, I have included some recommended readings that pertain to each challenge.
 
 ## Requirements
 
@@ -30,6 +31,14 @@ It is recommended that you use [Node Version Manager](https://github.com/nvm-sh/
 - A text editor or IDE, such as Visual Studio Code
 - `nvm`
 - Patience, determination, and coffee
+
+## Setup Instructions
+
+1. Clone this project down to your local machine using Git
+    - `git clone git@github.com:kmausolf/learning-react.git`
+    - You can also fork this repository if you'd like to save your progress on your own version of the repo
+2. Open your terminal and `cd` to this project's directory.
+3. Run `npm install`
 
 ## Project Overview
 
