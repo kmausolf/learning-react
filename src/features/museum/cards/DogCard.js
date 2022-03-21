@@ -90,7 +90,7 @@ export const DogCard = (props) => {
                      * 
                      */
                 }
-                {props.dog?.dogName || "No Name Found"}
+                {props.dog?.name || "No Name Found"}
             </div>
             <div>
                 {// this block is safe to remove
@@ -98,7 +98,7 @@ export const DogCard = (props) => {
 
                     /* 
                      * Add the image of the dog here, using an <img> tag. Just like
-                     * we did above, use the dogPhoto prop as the image source (src).
+                     * we did above, use the image prop as the image source (src).
                      * Try to keep all the images the same size without modifying the
                      * image file!
                      *
