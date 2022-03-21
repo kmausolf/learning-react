@@ -42,7 +42,7 @@ The app can be considered "done" when:
 - The app has been styled to match the design layout
     - It doesn't have to be exact, but something close to that.  You're welcome to style the components how you wish.  Be creative!
 
-For instructions on how to run the project, please see the Create React App documentation below.
+For instructions on how to run the project, please see the React App documentation below.
 
 ## Designs
 
@@ -77,7 +77,11 @@ This is the first time we've passed props to a component in React.  What are pro
 
 VERY IMPORTANT: When we create components via a function like `map`, we say that they are dynamically generated.  As such, they require a key.  Be sure to assign every HTML element/component you generate from a map function a uniqe `key` prop.  React needs this to be able to detect which components need to update.  Assign `dog.id` to the `key` prop.
 
-// TODO: Add Recommended Readings
+### Recommended Readings
+
+- [Components and Props](https://reactjs.org/docs/components-and-props.html)
+- [Map function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [React Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
 
 ## Challenge #2
 
@@ -85,23 +89,38 @@ First off, great job on completing Challenge 1.  We do a lot of dynamic renderin
 
 The next challenge is going to be getting the image of the dog to show up on screen.  This one should feel pretty familiar if you have experience with HTML and CSS, which you should before attempting this project.  We can use an `<img>` tag for this element.  For the `<img>` tag's `src` property, use `dog.image`.  You'll need to style this element yourself so that it is similar to the design.
 
+### Recommended Readings
+
+- [HTML img tag](https://www.w3schools.com/tags/tag_img.asp)
+- [Flexbox in CSS](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
 ## Challenge 3
 
 This challenge will be our first time using state in a functional component.  React provides us a hook called `useState`.  Whatever value you pass into `useState()` will be the initial value.  For example, if I do `const [isSkyBlue, setIsSkyBlue] = useState(true);`, the initial value of `isSkyBlue` is true.  We can change the value by calling `setIsSkyBlue()` and passing the new value as its argument.  Your goal here is to set up a state hook that we can use to keep track of how many bones each dog has eaten.  Since each dog has assumedly eaten no bones prior to arriving at the museum, the initial value should be 0.
 
-Learn more about hooks here:  [Intro to React Hooks](https://reactjs.org/docs/hooks-intro.html)
+### Recommended Readings
+
+- [Intro to React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
+- [Lifecycle Methods in Functional Components - useEffect](https://reactjs.org/docs/hooks-effect.html)
 
 ## Challenge 4
 
 For this challenge, all you need to do is show the number of bones consumed by the dog.  You can display JS values in the HTML markup here (yay for JSX!) by placing them between a set of curly braces like this: `<div>{myValue}</div>`.  Once you've added that value in, you'll see it displayed on the DogCard.  We don't have a button we can use to change the value just yet though.
 
+### Recommended Readings
+
+- [Intro to JSX](https://reactjs.org/docs/introducing-jsx.html)
+
 ## Challenge 5
 
 In this challenge, we'll be using the state value and setter function we got from the hook we set up in Challenge 3.  Create a function that, when called, increases the number of bones the dog has consumed by 1.  You will need to use both the current state value and the setter function to complete this challenge.
 
+When we provide a function to an element's `onClick` property, that element will provide us a prop called `event`.  Here, we're ignoring it, because the only thing we care about is whether the button was clicked or not.  Many "action" properties such as `onKeyDown`, `onClick`, and `onKeyPress` will pass you an `event` parameter.  In the case of `onKeyPress`, the event parameter will contain information about what key was pressed.
+
 ### Recommended Reading
 
-[Handling Events In React](https://reactjs.org/docs/handling-events.htm)
+- [Handling Events In React](https://reactjs.org/docs/handling-events.html)
 
 ## Challenge 6
 
@@ -111,7 +130,8 @@ You will need to style the buttons yourself to have them be similar to the desig
 
 ### Recommended Reading
 
-[Ternary Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+- [Ternary Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+- [Reusable Components](https://blog.logrocket.com/building-reusable-ui-components-with-react-hooks/)
 
 ## Challenge 7
 
