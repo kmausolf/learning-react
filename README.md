@@ -99,11 +99,19 @@ For this challenge, all you need to do is show the number of bones consumed by t
 
 In this challenge, we'll be using the state value and setter function we got from the hook we set up in Challenge 3.  Create a function that, when called, increases the number of bones the dog has consumed by 1.  You will need to use both the current state value and the setter function to complete this challenge.
 
+### Recommended Reading
+
+[Handling Events In React](https://reactjs.org/docs/handling-events.htm)
+
 ## Challenge 6
 
 Just like in `Museum.js`, it's time to pass props again, but this time to CardButton.  For a description of CardButton's props, take a look at the comments at the top of `CardButton.js`.  Since CardButton is a reusable component, we might not use every prop that is available on the component.  As mentioned in the comment for this challenge, there's no need to pass the `isActive` prop for this button, I've set it to default to false.  The colors also have default values.  That said, the only prop you really need to pass is the function you created to increase bones consumed to the `buttonAction` prop and `Bone` to `ButtonSvg`.  Feel free to customize the colors by passing string values such as `green` or `#FFFFFF` to the appropriate color props.
 
 You will need to style the buttons yourself to have them be similar to the design.
+
+### Recommended Reading
+
+[Ternary Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
 ## Challenge 7
 

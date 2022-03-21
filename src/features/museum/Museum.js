@@ -28,7 +28,9 @@ export const Museum = () => {
          * You'll want to look up the documentation for map, but here's a
          * basic illustration:
          * 
-         * arrayOfThings.map((thing) => { return <AComponent key={thing.id} /> })
+         * const mappedComponents = arrayOfThings.map((thing) => { 
+         *   return <AComponent key={thing.id} /> 
+         * })
          * 
          * arrayOfThings is your array of objects, thing is the current object
          * from that array being mapped. The map function takes a callback function
