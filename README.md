@@ -37,6 +37,7 @@ It is recommended that you use [Node Version Manager](https://github.com/nvm-sh/
 1. Clone this project down to your local machine using Git
     - `git clone git@github.com:kmausolf/learning-react.git`
     - You can also fork this repository if you'd like to save your progress on your own version of the repo
+    - Alternatively, you can download the project code as a zip file.  Go to the releases section of this repo and download the newest release.
 2. Open your terminal and `cd` to this project's directory.
 3. Run `npm install`
 
