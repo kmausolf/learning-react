@@ -149,6 +149,10 @@ Ah, the home stretch!  This is more or less your victory lap.  For this challeng
 
 Once you've completed your header and styled the app to your liking, you're done!  Congratulations on taking your first steps in React!
 
+## Solutions
+
+My apprentice Danny Sanchez has been so kind as to provide solutions to each challenge!  If you're really, really stuck, feel free to take a peek at how Danny went about solving these!  Big props to @dannysanchez559 on GitHub!
+
 # React App Documentation
 
 I've decided to preserve the Create React App documentation here in case you'd like information about how to run the app (sounds useful, right?).
