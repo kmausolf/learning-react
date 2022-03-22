@@ -127,7 +127,7 @@ In this challenge, we'll be using the state value and setter function we got fro
 
 When we provide a function to an element's `onClick` property, that element will provide us a prop called `event`.  Here, we're ignoring it, because the only thing we care about is whether the button was clicked or not.  Many "action" properties such as `onKeyDown`, `onClick`, and `onKeyPress` will pass you an `event` parameter.  In the case of `onKeyPress`, the event parameter will contain information about what key was pressed.
 
-### Recommended Reading
+### Recommended Readings
 
 - [Handling Events In React](https://reactjs.org/docs/handling-events.html)
 
@@ -137,7 +137,7 @@ Just like in `Museum.js`, it's time to pass props again, but this time to CardBu
 
 You will need to style the buttons yourself to have them be similar to the design.
 
-### Recommended Reading
+### Recommended Readings
 
 - [Ternary Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 - [Reusable Components](https://blog.logrocket.com/building-reusable-ui-components-with-react-hooks/)

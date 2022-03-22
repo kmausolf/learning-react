@@ -88,6 +88,11 @@ export const DogCard = (props) => {
                      * is there just in case we didn't get a dog prop, and will default
                      * to "No Name Found" rather than showing nothing. It's a fallback!
                      * 
+                     * To verify this fact, open the console in your browser, then type
+                     * "foo" || "bar" and hit enter.  You'll see that the result is "foo"!
+                     * Similarly, if you type false || "bar" then hit enter, you'll see
+                     * that the result is "bar".
+                     * 
                      */
                 }
                 {props.dog?.name || "No Name Found"}
@@ -155,6 +160,14 @@ export const DogCard = (props) => {
                          * to invert these colors such that the bone icon becomes white and the
                          * background to become blue. We base whether or not the button is active
                          * on our state value that keeps track of if they're a favorite or not.
+                         * 
+                         * Remember how we imported those SVGs as React components earlier?  I
+                         * mentioned that we want to pass props to them, but to do what, exactly?
+                         * SVGs are not images, but vector graphics!  They're a program that draws
+                         * a pattern on the screen.  Since they're programmatic, we can tell them
+                         * how we'd like the pattern drawn.  If you look in CardButton, you'll see
+                         * that these colors being passed as props are being used to change the 
+                         * color of the icon!  That's one of the biggest advantages of SVG icons!
                          * 
                          */
                     }
